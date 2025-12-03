@@ -435,3 +435,107 @@
             <div class="chip">Hub académique / think tank sur risque systémique IA, tiers critiques et contagion inter-sectorielle</div>
           </div>
         </div>
+      </div>
+      <p class="muted">
+        Ce site ne vend <b>ni modèles de risques, ni systèmes IA, ni produits
+        financiers, ni assurances, ni services de conseil ou de RegTech</b> : uniquement
+        le nom de domaine <b>AISystemicRisk.com</b>, avec la possibilité d’y adjoindre
+        <b>AISystemicRisk.org</b> en tant qu’actif descriptif associé. L’acquéreur
+        reste seul responsable de ses travaux analytiques, de ses cadres de
+        gouvernance, de ses méthodologies et de sa conformité réglementaire.
+      </p>
+    </section>
+
+    <!-- ================= AUTRES ACTIFS FR ================= -->
+    <section class="card" style="margin-top:16px" data-fr hidden>
+      <h3>Actifs associés (même thèse solvabilité &amp; risques systémiques)</h3>
+      <p class="muted">
+        Selon la stratégie de l’acquéreur, AISystemicRisk.com peut être articulé
+        avec d’autres actifs descriptifs du même ensemble pour construire un cadre
+        intégré des risques systémiques, climatiques, technologiques et de solvabilité&nbsp;:
+      </p>
+      <div class="list">
+        <a class="chip" href="https://www.planetarysolvency.com" target="_blank" rel="noopener">PlanetarySolvency.com</a>
+        <a class="chip" href="https://www.climatesolvency.com" target="_blank" rel="noopener">ClimateSolvency.com</a>
+        <a class="chip" href="https://www.naturesolvency.com" target="_blank" rel="noopener">NatureSolvency.com</a>
+        <a class="chip" href="https://www.biospheresolvency.com" target="_blank" rel="noopener">BiosphereSolvency.com</a>
+        <a class="chip" href="https://www.oceansolvency.com" target="_blank" rel="noopener">OceanSolvency.com</a>
+        <a class="chip" href="https://www.energysolvency.com" target="_blank" rel="noopener">EnergySolvency.com</a>
+        <a class="chip" href="https://www.computesolvency.com" target="_blank" rel="noopener">ComputeSolvency.com</a>
+        <a class="chip" href="https://www.neuralsolvency.com" target="_blank" rel="noopener">NeuralSolvency.com</a>
+        <a class="chip" href="https://www.automationsovereignty.com" target="_blank" rel="noopener">AutomationSovereignty.com</a>
+        <a class="chip" href="https://www.computesovereignty.com" target="_blank" rel="noopener">ComputeSovereignty.com</a>
+        <a class="chip" href="https://www.bcisafety.ai" target="_blank" rel="noopener">BciSafety.ai</a>
+        <a class="chip" href="https://www.neuralaccess.ai" target="_blank" rel="noopener">NeuralAccess.ai</a>
+      </div>
+      <p class="muted">
+        Ces exemples sont fournis à titre illustratif. Sur ce site, le nom de domaine
+        <b>AISystemicRisk.com</b> est proposé à l’acquisition, avec la possibilité
+        d’inclure <b>AISystemicRisk.org</b> dans un package distinct ou combiné.
+      </p>
+    </section>
+
+    <!-- ================= ACQUISITION FR ================= -->
+    <section class="card" style="margin-top:16px" data-fr hidden>
+      <h3>Acquisition (process sécurisé)</h3>
+      <p class="muted">
+        Process type : NDA &rarr; échanges stratégiques &rarr; offre formelle
+        &rarr; escrow &rarr; transfert du domaine. L’actif principal cédé est le
+        <b>nom de domaine AISystemicRisk.com</b>, avec option d’inclure
+        <b>AISystemicRisk.org</b> dans un package alliance / observatoire / fondation.
+        Aucune prestation de conseil, de fourniture de modèles, de logiciels, de
+        services financiers ou de fonctions réglementaires n’est attachée.
+      </p>
+      <a class="btn primary" href="mailto:contact@aisystemicrisk.com?subject=AISystemicRisk.com%20-%20NDA%20%2F%20Proposition">
+        Contact direct : contact@aisystemicrisk.com
+      </a>
+    </section>
+
+    <!-- ================= DOCS FR ================= -->
+    <section class="card" style="margin-top:16px" data-fr hidden>
+      <h3>Documents / Briefs</h3>
+      <p class="muted">
+        Brief d’acquisition détaillé AISystemicRisk.com / AISystemicRisk.org (2025-11)
+        disponible en français pour les équipes Stabilité financière, Supervision,
+        Risques, Digital / IA &amp; Data, Juridique et Stratégie.
+      </p>
+      <div class="cta">
+        <a class="btn" href="/Acquisition%20Brief%20aisystemicrisk-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
+          👁️ Ouvrir le Brief (FR)
+        </a>
+        <a class="btn primary" href="/Acquisition%20Brief%20aisystemicrisk-202511.pdf" download="Acquisition-Brief-AISystemicRisk-FR-202511.pdf" type="application/pdf">
+          📥 Télécharger (FR, PDF)
+        </a>
+      </div>
+    </section>
+
+    <p class="foot muted">
+      © AISystemicRisk.com — descriptive digital asset “AI systemic risk &amp; macro-prudential governance”.
+      No affiliation with central banks, supervisors, international organisations, financial institutions or vendors.
+      Descriptive use only. No legal, regulatory, financial, investment or risk advice.
+      — Contact: <a href="mailto:contact@aisystemicrisk.com">contact@aisystemicrisk.com</a>
+    </p>
+  </div>
+
+  <script>
+    const frBtn = document.getElementById('btn-fr');
+    const enBtn = document.getElementById('btn-en');
+
+    function show(lang){
+      document.querySelectorAll('[data-fr]').forEach(n => n.hidden = (lang !== 'fr'));
+      document.querySelectorAll('[data-en]').forEach(n => n.hidden = (lang !== 'en'));
+      frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
+      enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+      document.documentElement.lang = lang;
+    }
+
+    frBtn.addEventListener('click', () => show('fr'));
+    enBtn.addEventListener('click', () => show('en'));
+
+    // .com : EN by default, FR only if user clicks
+    (function initLang(){
+      show('en');
+    })();
+  </script>
+</body>
+</html>
